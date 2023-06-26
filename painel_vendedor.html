@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Pra deixar responsivo-->
+  <link href="styles/login.css" rel="stylesheet"/>
+  <link href="styles/painel_vendedor.js" rel="stylesheet"/>
+
+
+  <!-- Bootstrap links CDN-->
+  <link rel= "stylesheet" href= "https://maxcdn.Bootstrapcdn.com/Bootstrap/3.3.2/css/Bootstrap.min.css" > 
+  <link rel= "stylesheet" href= "https://maxcdn.Bootstrapcdn.com/Bootstrap/3.3.2/css/Bootstrap-theme.min.css" >
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+</head>
+<body>
+ <!-- Dependência jQuery-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script src= "https://maxcdn.Bootstrapcdn.com/Bootstrap/3.3.2/js/Bootstrap.min.js" ></script>
+
+ <!-- Optional JavaScript -->
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+ <h3>Painel do Vendedor</h3>
+ <h4>Cadastro</h4>
+
+ <div class="lista-cad">
+  <select name="cadastrar">
+    <option value="Produto">Produto</option>
+    <option value="Serviço">Serviço</option>
+  </select>
+</div>
+
+<form action="cadastro">
+  <div class="form-cad">
+  <label for="name">Nome do Produto: </label>
+    <input type="text" name="nome" id="nome" size="31">
+  </div>
+  
+  <div class="form-cad">
+    <label for="anexo">Anexo </label>
+    <input type="file" name="arquivo" id="arquivo" size="31">
+  </label>
+  </div>
+
+  <div class="form-cad">
+  <textarea name="mensagem" id="mensagem" cols="100" rows="8" placeholder="Descreva o seu produto"></textarea>
+  </div>
+
+  <div class="form-cad">
+    <label for="dinheiro">R$</label>
+    <input type="text" name="dinheiro" id="dinheiro" size="30" style="display:inline-block" />
+  </div>
+
+<button type="submit" value="cadastrar">Cadastrar</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

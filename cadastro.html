@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - WeNerd</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d9500bad35.js"></script>
+    <script src="js/login_cadastro.js"></script>
+</head>
+
+<body>
+    <!--Barra de navegação-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    
+        <a class="navbar-brand" href="index.html"><img src="WENERDINHO.png" width="40px" height="40px" />WeNerd!</a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"><i class="fas fa-sign-in-alt">Entrar</i></a>
+    
+              <div class="dropdown-menu">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="email-usuario">Email</label>
+                    <input type="email" class="form-control" id="email-usuario" placeholder="email@email.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="senha-usuario">Senha</label>
+                    <input type="password" class="form-control" id="senha-usuario" placeholder="Senha123">
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="lembrar-senha">
+                    <label class="form-check-label" for="lembrar-senha">
+                      Lembrar
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <p class="dropdown-item">Novo por aqui? <a href="cadastro.html"><i class="fas fa-registered">Registre-se</i></a></p>
+                <a class="dropdown-item" href="#">Esqueci minha senha</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"><i class="fas fa-id-card">Perfil</i></a>
+    
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="perfil-de-usuario.html">Perfil Cliente</a>
+                <a class="dropdown-item" href="#">Perfil Vendedor</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Desconectar</a>
+              </div>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="carrinho.html"><i class="fas fa-shopping-cart">Carrinho</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="empresa.html"><i class="fas fa-info">Sobre</i></a>
+            </li>
+          </ul>
+    
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisa" aria-label="Pesquisa">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+      <!--Fim da barra de navegação-->
+
+    <!--Conteúdo da página-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="dark-grey">Faça seu registro. <h6><small>E faça parte da nossa comunidade de nerds :D</small>
+                    </h6>
+                </h3>
+
+                <div class="form-group col-lg-6">
+                  <i class="fas fa-user"></i><label>Nome</label>
+                  <input type="text" class="form-control" placeholder="Nome">
+                </div>
+
+                <div class="form-group col-lg-6">
+                  <label>Sobrenome</label>
+                <input type="text" class="form-control" placeholder="Sobrenome">
+                </div>
+
+                <div class="form-group col-lg-6">
+                    <i class="fas fa-envelope-open-text"></i><label>Endereço de email</label>
+                    <input type="email" class="form-control" placeholder="email@email.com" id="usuario">
+                </div>
+
+                <div class="form-group col-lg-6">
+                    <label>Confimar endereço de email</label>
+                    <input type="email" class="form-control" placeholder="email@email.com" id="confirmarUsuario">
+                </div>
+                
+                <div class="form-group col-lg-6">
+                        <i class="fas fa-key"></i><label>Senha</label>
+                    <input type="password" class="form-control" placeholder="Senha" id="senha">
+                </div>
+
+                <div class="form-group col-lg-6">
+                    <label>Confirmar senha</label>
+                    <input type="password" class="form-control" placeholder="Confirmar senha" id="confirmarSenha">
+                </div>                
+
+                <div class="col-sm-6">
+                    <input type="checkbox" class="checkbox" />Registrar para nosso boletim informativo
+                </div>
+
+                <div class="col-sm-6">
+                    <input type="checkbox" class="checkbox" />Enviar notificações por email
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+                <h3 class="dark-grey">Termos e Condições</h3>
+                <p>
+                    Clicando em "Registrar" você estará concordando com os nossos termos e condições.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam natus in cupiditate iusto facere
+                    quos, vitae hic dolorum incidunt minus pariatur sequi quod odit quis iure culpa mollitia voluptates
+                    reiciendis.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quae est error veniam ullam facere
+                    cumque ipsum dolores iusto fuga magnam, molestias suscipit voluptatibus recusandae voluptate ad odit
+                    minima velit.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorem ullam! Autem modi
+                    consequatur neque, amet facilis laboriosam accusantium cum fuga esse maxime veniam quod quam quaerat
+                    ex, exercitationem voluptatibus?
+                </p>
+
+                <button type="submit" class="btn btn-primary" onclick="register()">Registrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
